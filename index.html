@@ -1,0 +1,185 @@
+<html>
+<head>
+<title> Aurora Atelier - Home</title>
+			<link rel="icon" href="Icon 2.png">
+			<meta name="viewport" content="width=device-width, initial scale=1">
+			<link href="bootstrap.min.css" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			<link rel="stylesheet" href="about-page.css">
+			<script src="bootstrap.min.js"></script>
+			<link rel="stylesheet" href="homepage.css">
+			<script src="bootstrap.min.js"></script>
+			<link rel="preconnect" href="https://fonts.googleapis.com">
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+			<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+		
+	<div class="container">
+		<div class="container2">
+			<div class="header1">
+						
+			<a href="index.html"
+				onMouseOver="this.style.backgroundColor='#fbe3e8'"
+				onMouseOut="this.style.backgroundColor='#fbf7f5'">HOME</a>
+			 
+			<a href="about-page.html"
+				onMouseOver="this.style.backgroundColor='#fbe3e8'"
+				onMouseOut="this.style.backgroundColor='#fbf7f5'">ABOUT</a>
+			</div>
+		
+			<div class="header2">
+			 
+			<img src="logo.png" width="25%">
+			
+			<a href="products-and-services.html"
+				onMouseOver="this.style.backgroundColor='#fbe3e8'"
+				onMouseOut="this.style.backgroundColor='#fbf7f5'">SERVICES</a>
+				
+			<a href="gallery.html"
+				onMouseOver="this.style.backgroundColor='#fbe3e8'"
+				onMouseOut="this.style.backgroundColor='#fbf7f5'">GALLERY</a>			
+			</div>
+		</div>
+		
+		<br><br>
+		
+		<div class="slideshow-container">
+
+			<div class="mySlides fade">
+			<div class="numbertext">1 / 5</div>
+			<img src="assets-homepage\bwkei.png" style="width:100%">
+			</div>
+
+			<div class="mySlides fade">
+			<div class="numbertext">2 / 5</div>
+			<img src="assets-homepage\bwsumi.png" style="width:100%">
+			</div>
+
+			<div class="mySlides fade">
+			<div class="numbertext">3 / 5</div>
+			<img src="assets-homepage\bwjona.png" style="width:100%">
+			</div>
+
+			<div class="mySlides fade">
+			<div class="numbertext">4 / 5</div>
+			<img src="assets-homepage\bwheart.png" style="width:100%">
+			</div>
+			
+			<div class="mySlides fade">
+			<div class="numbertext">5 / 5</div>
+			<img src="assets-homepage\bwz.png" style="width:100%">
+			</div>
+
+		</div>
+
+	<div style="text-align:center">
+		<span class="dot"></span> 
+		<span class="dot"></span> 
+		<span class="dot"></span> 
+		<span class="dot"></span> 
+		<span class="dot"></span> 
+	</div>
+
+	<script>
+		let slideIndex = 0;
+		showSlides();
+
+		function showSlides() {
+			let i;
+			let slides = document.getElementsByClassName("mySlides");
+			let dots = document.getElementsByClassName("dot");
+			for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";  
+		}
+  
+		slideIndex++;
+			if (slideIndex > slides.length) {slideIndex = 1}    
+			for (i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" active", "");
+		}
+		
+		slides[slideIndex-1].style.display = "block";  
+		dots[slideIndex-1].className += " active";
+		setTimeout(showSlides, 5000); //Change image every 5 seconds
+		}
+	</script>
+	
+	<br><br>
+	
+	<div class="intro">
+		<hr class="solid">
+		<h1>Welcome to Aurora Atelier</h1>
+		
+		<p>We're a dedicated group of experts devoted to delivering inventive solutions for your projects.
+		<br>At Aurora Atelier, we guarantee your ideas are brought to life with precision and creativity.
+		<br>In our efforts, we aim to continuously explore and expand our knowledge, refining our existing skills 
+		<br>while forging connections to personalize our outputs, ensuring that our clients' objectives are consistently achieved.</p>
+		
+		<a href="about-page.html"><button class="button button1">
+			Learn More
+		</button></a>
+	</div>
+	<br><br><br><br>
+	
+	<div class="description">
+	<table align="center">
+	<tr>
+			<td rowspan="2" align="center">	
+				<img src="assets-homepage\HP-1.png">
+			</td>
+			<th>Our Work, Our Passion</th>
+		</tr>
+		</tr>
+		<tr>
+			<td>		
+			<p>Welcome to Aurora Atelier, where our work is more than a job; it's our passion. 
+			<br>
+		As a dedicated team of experts, we're committed to delivering inventive solutions for your projects. 
+			<br>We guarantee that your ideas come to life with precision and creativity, reflecting our genuine enthusiasm for turning your visions into reality.
+			<br><br><br>
+			<a href="gallery.html"><button class="button button1">
+			Check our Gallery
+			</button></a>
+			</p>			
+			</td>
+	</tr>
+	<tr>
+			<th>Your Vision, Our Mission</th>
+			<td rowspan="2" align="center">	
+				<img src="assets-homepage\HP-4.jpg">
+			</td>
+		</tr>
+
+		<tr>
+			<td>		
+			<p>At Aurora Atelier, your vision becomes our mission. We're not just creators; we are dream weavers. Every project is approached with care, recognizing that behind each idea is a dream. Our responsibility is to nurture and bring that dream to fruition.  
+			<br>Beyond delivering solutions, our mission is to craft moments filled with emotion, evoking joy, inspiring wonder, and creating experiences that linger in the hearts of those we touch. Your objectives are not just met but consistently exceeded, building enduring partnerships that prioritize your goals as our own.
+			<br><br><br>
+			<a href="products-and-services.html"><button class="button button1">
+			Check our Services
+			</button></a>
+			</p>			
+			</td>
+		</tr>
+					
+	</tr>
+	</table>
+	
+	<br><br><br><br><br><br><br><br><br>
+		<div class="footer">
+			<div class="container3">
+				<img src="logo.png" width="10px">
+				
+				<p>aurora.atelier@gmail.com</p>
+				<a href="#" class="fa fa-google"></a>
+				<a href="#" class="fa fa-twitter"></a>
+				<a href="#" class="fa fa-facebook"></a>
+			</div>
+		</div>
+	
+
+	
+	</div>
+</body>
+</html>
